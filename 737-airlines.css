@@ -1,0 +1,211 @@
+@charset "utf-8";
+
+@font-face {
+	font-family:'Air Americana DEMO';
+	src:url("fonts/AirAmericanaDemoSemibold-nRB6R.ttf") format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+html { 
+	min-height: 100%;
+	cursor: url("images/plane.png"), auto;	
+}
+
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+/* Body Styles */
+
+body { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Comfortaa", sans-serif;
+  background: #717882;    
+}
+
+.content {
+	margin-top: -160px;
+}
+
+.content h1 {
+	align-self: flex-start;
+	margin-left: 2px;
+}
+
+/* Header Styles */
+
+header h1 {
+	position: relative;
+    margin-top: -190px;
+	color: #131f2f;
+	font-size: 2.0em;
+}
+
+h1 {
+	font-size:1.5em;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	color: #b78654;
+	
+}
+
+/* Navigation Bar Styles */
+
+.nav_content {	
+	background-color: #b8bbc0;	
+	margin-top: 131px;
+	margin-right: -25px;
+	margin-bottom: 165px;
+	margin-left: -25px;
+	border: 2px solid #b8bbc0;
+	width: 900px;	
+}
+
+.nav_menu ul {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.nav_menu li {  
+  display: inline;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.nav_menu a {
+  color: #131f2f;
+  text-decoration: none;
+  padding: 4px 4px;
+  display: block;
+}
+
+.nav_menu a:hover {
+  text-decoration: underline;
+  color: #131f2f;
+}
+
+.nav_menu a.active {
+	background-color: #717882;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+.navicon {
+    display: none; 
+    font-size: 24px;
+    cursor: pointer;
+    padding: 15px;
+}
+
+/* Container Styles */
+
+.container {
+	border: 5px solid #131f2f;
+	padding: 20px;
+	width: 800px;
+	margin: auto;
+	background-color: #131f2f;
+	display: flex;
+	flex-wrap: wrap; 
+	box-shadow: 0 4px 150px #131f2f;
+}
+
+/* Header Image Styles */
+
+header img {
+	width: 850px;
+	height: 200px;
+	margin-top: -25px;
+	margin-left: -25px;	
+}
+
+/* Table Styles */
+
+table {
+    border: 1px solid;    
+    width: 144.3%; 
+    border-collapse: collapse;     
+	cursor: pointer;
+}
+
+thead { 
+	background: #717882;
+	text-align: left;
+}
+		
+tbody { 	
+	text-align: center;
+	background: #b8bbc0;
+}
+
+tfoot {
+	color: #131f2f;
+	background: #717882;
+}
+  
+th, td, tfoot {
+    border: 3px solid #717882;
+	color: #131f2f;
+}
+
+/* Image Styles */
+
+.airline-logo {
+	width: 110px;
+	height: auto;
+}
+
+/* Footer Styles */
+
+footer {
+	border: 2px solid #b8bbc0;
+	background-color: #b8bbc0;    
+	padding: 5px 0;
+	margin-top: 25px;
+	width: 100%;
+    margin-left: auto;
+	margin-right: auto;
+}
+
+footer a {
+	text-decoration: none;
+	color: #131f2f;
+}
+
+footer p {
+	color: #131f2f;
+	font-size: 1.1em;	
+	margin: 0;
+	width: 100%;
+	text-align: center;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+/* Navicon Styles */
+
+a#navicon {
+	display: none;
+}
+
+/* Mobile Devices: 0 to 480px */
+
+@media only screen and (max-width: 480px) {
+	
+	a#navicon {
+		display: block;
+	}
+	
+	.nav_menu ul {
+		display: none;
+	}
+}
+
